@@ -37,16 +37,16 @@ ___
 
 <h2>Syntaxe</h2>
 
-<h3 id="#insheaderins">Header</h3>
+<h3> <a id="#insheaderins">Header</a></h3>
 
-<blockquote>
-    <h1>titre 1</h1>
-    <h2>titre 2</h2>
-    <h3>titre 3</h3>
-    <h4>titre 4</h4>
-    <h5>titre 5</h5>
-    <h6>titre 6</h6>
-</blockquote>
+<code>
+    &lt;h1&gt;titre 1&lt;/h1&gt;<br>
+    &lt;h2&gt;titre 2&lt;/h2&gt;<br>
+    &lt;h3&gt;titre 3&lt;/h3&gt;<br>
+    &lt;h4&gt;titre 4&lt;/h4&gt;<br>
+    &lt;h5&gt;titre 5&lt;/h5&gt;<br>
+    &lt;h6&gt;titre 6&lt;/h6&gt;<br>
+</code>
 
 <h1>titre 1</h1>
 <h2>titre 2</h2>
@@ -55,21 +55,36 @@ ___
 <h5>titre 5</h5>
 <h6>titre 6</h6>
 
-#### <ins>Emphasis</ins>
+<h3><a id="#insemphasisins">Emphasis</a></h3>
 
-`*italic* ou _italic_`  *italic* <br>
-`**bold** ou __bold__`  **bold** <br>
-ou combiner les deux<br>
-`_**comb**_ ou __*comb*__`  _**comb**_<br>
+&lt;em&gt;italic&lt;/em&gt; <em>italic</em><br>
+&lt;strong gras &lt;strong&gt;  <strong>gras</strong><br>
 
-#### <ins>List</ins>
-###### Non ordonné
+<h3><a id="#inslistins">List</a></h3>
+ <h4><a id="#non-ordonné">Non ordonné</a></h4>
 
-    * un
-    * deux 
-    * trois
-      * un
-      * deux
+ &lt;ul&gt;<br>
+    &lt;li&gt;un&lt;li&gt;<br>
+    &lt;li&gt;deux&lt;li&gt;<br>
+    &lt;li&gt;trois&lt;li&gt;<br>
+    &lt;ul&gt;<br>
+            &lt;li&gt;un&lt;li&gt;<br>
+            &lt;li&gt;deux&lt;li&gt;<br>
+    &lt;/ul&gt;<br>
+    &lt;li&gt;quatre&lt;li&gt;<br>
+    &lt;/ul&gt;<br>
+
+    <ul>
+        <li>un</li>
+        <li>deux</li>
+        <li>trois</li>
+        <ul>
+            <li>un</li>
+            <li>deux</li>
+        </ul>
+        <li>quatre</li>
+    </ul>
+ 
 
 * un
 * deux 
@@ -77,65 +92,97 @@ ou combiner les deux<br>
   * un
   * deux
 
-###### Ordonné
+<h4><a id="#ordonné">Ordonné</a></h4>
 
-    1. un
-    1. deux 
-    1. trois
-      1. un
-      1. deux
+&lt;ol&gt;<br>
+&lt;li>un&lt;/li&gt;<br>
+&lt;li>deux&lt;/li&gt;<br>
+&lt;li>trois&lt;/li&gt;<br>
+&lt;ol&gt;<br>
+&lt;li>un&lt;/li&gt;<br>
+&lt;li>deux&lt;/li&gt;<br>
+&lt;/ol&gt;<br>
+&lt;/ol&gt;
 
-1. un
-1. deux 
-1. trois
-   1. un
-   1. deux
+      <ol>
+        <li>un</li>
+        <li>deux</li>
+        <li>trois</li>
+        <ol>
+            <li>un</li>
+            <li>deux</li>
+      </ol>
+    </ol>
 
-#### <ins>Image</ins>
-```
+    <h3><a id="#insimageins">Image</a></h3>
 
-![web Dev](./ressources/in-case-of-fire.jpg)
+    &lt;img src="https://d3eg7p78snsqvk.cloudfront.net/thumbs/2017/6/thumb-3918e657ff9d73f042d800f7b38792f75c1db263" alt="becode"/&gt;
 
+    <img src="https://d3eg7p78snsqvk.cloudfront.net/thumbs/2017/6/thumb-3918e657ff9d73f042d800f7b38792f75c1db263" alt="becode"/>
 
-```
-<br>
+    <h3><a id="#insblockquotesin">Liens</a></h3>
 
-![web Dev](./ressources/in-case-of-fire.jpg)
+    &lt;a href="https//:www.mybecode.org" title="my becode"&gt;my becode&lt;/a&gt;<br>
+    <a href="https//:www.mybecode.org" title="my becode">my becode</a>
 
-#### <ins>Liens</ins>
-
-http://github.com - automatic!<br>
-[GitHub](http://github.com) `[GitHub](http://github.com)`<br>
-
+<h3><a id="#insblockquotesin"><Blockquote></Blockquote></a></h3>
 #### <ins>Blockquotes</ins>
 
-```
->c'est un texte de test
->>encore une fois c'est un texte de test
-```
-<br>
+&lt;blockquote&gt;<br>
+un texte ici<br>
+&lt;/blockquote&gt;
 
->c'est un texte de test
->>encore une fois c'est un texte de test
+<blockquote>
+    un texte ici
+</blockquote>
 
-#### <ins>Code en ligne</ins>
-```
-Je pense que vous devriez utiliser
-L'élément `<addr>` ici à la place.
-```
-<br>
+<h3><a id="#Tableau">Tableaux</a></h3>
 
-Je pense que vous devriez utiliser
-L'élément `<addr>` ici à la place.
+&lt;table&gt;<br>
+&lt;tr&gt;<br>
+&lt;th&gt;titre1&lt;/th&gt;<br>
+&lt;th&gt;titre2&lt;/th&gt;<br>
+&lt;th&gt;titre3&lt;/th&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;col1&lt;/td&gt;<br>
+&lt;td&gt;col1&lt;/td&gt;<br>
+&lt;td&gt;col1&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;col2&lt;/td&gt;<br>
+&lt;td&gt;col2&lt;/td&gt;<br>
+&lt;td&gt;col2&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;col3&lt;/td&gt;<br>
+&lt;td&gt;col3&lt;/td&gt;<br>
+&lt;td&gt;col3&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
 
-
-### <ins>Tableau</ins>
-
-| titre1   |    titre2    |  titre3 |
-|----------|:------------:|--------:|
-| col 1    |    col1      |   col1  |
-| col 2    |    col2      |   col2  |
-| col3     |    col3      |   col3  |
+<table>
+    <tr>
+        <th>titre1</th>
+        <th>titre2</th>
+        <th>titre3</th>
+    </tr>
+    <tr>
+        <td>col1</td>
+        <td>col1</td>
+        <td>col1</td>
+    </tr>
+    <tr>
+        <td>col2</td>
+        <td>col2</td>
+        <td>col2</td>
+    </tr>
+    <tr>
+        <td>col3</td>
+        <td>col3</td>
+        <td>col3</td>
+    </tr>
+</table>
 
 </body>
 </html>
